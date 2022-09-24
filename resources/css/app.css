@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.button-primary{
+color: #fff;
+background-color: #007bff;
+border-color: #007bff;
+float: right;
+}
+
+.p{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+}

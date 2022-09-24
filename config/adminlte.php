@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>商品管理</b>',
+    'logo' => '<b>HOME</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -83,10 +83,10 @@ return [
     |
     */
 
-    'layout_topnav' => null,
+    'layout_topnav' => true,
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
-    'layout_fixed_navbar' => null,
+    'layout_fixed_navbar' => true,
     'layout_fixed_footer' => null,
     'layout_dark_mode' => null,
 
@@ -228,9 +228,32 @@ return [
         [
             'text' => '商品一覧',
             'url'  => 'items',
-            'icon' => 'fas fa-gamepad',
+            'icon' => 'fas fa-thin fa-list',
         ],
-
+        [
+            'text' => '商品登録',
+            'url'  => 'items/item_register',
+            'icon' => 'fa-solid fa-check',
+            'can' => 'Admin'
+        ],
+        [
+            'text' => '商品管理',
+            'url'  => 'items/search',
+            'icon' => 'fas fa-tag',
+        ],
+        [
+            'text' => 'CSVインポート',
+            'url'  => 'items/update',
+            'icon' => 'fa-solid fa-file-import',
+            'can' => 'Admin'
+        ],
+        [
+            'text' => 'ユーザー一覧',
+            'url'  => 'list',
+            'icon' => 'fa-solid fa-users',
+            'can' => 'Admin'
+        ]
+       
         // AdminLTEデフォルト
         /*
         // Navbar items:
