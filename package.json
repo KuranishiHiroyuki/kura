@@ -7,6 +7,7 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
+        "heroku-postbuild": "npm run prod",
         "production": "mix --production"
     },
     "devDependencies": {
@@ -21,4 +22,5 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1"
     }
+    
 }
