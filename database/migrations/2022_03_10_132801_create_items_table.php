@@ -19,6 +19,7 @@ class CreateItemsTable extends Migration
             $table->smallInteger('category_id')->unsigned();
             $table->integer('price')->unsigned();
             $table->string('detail', 500)->nullable();
+            $table->softDeletes()->nullable();
             $table->timestamps();
         });
     }
