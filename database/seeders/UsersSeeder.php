@@ -28,10 +28,10 @@ class UsersSeeder extends Seeder
         ]);
         DB::table('users')->insert([
             
-            'name'    => 'tarou',
-            'email' => 'tarou@email.com',
+            'name'    => 'kuranishi',
+            'email' => 'kuranishi@email.com',
             'password' => Hash::make('password11'),
-            'role' => '1',
+            'role' => '2',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
     ]);
