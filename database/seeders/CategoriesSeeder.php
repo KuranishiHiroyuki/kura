@@ -32,7 +32,7 @@ class CategoriesSeeder extends Seeder
         ]);
         DB::table('categories')->insert([
             'id' => 5,
-            'category_name' => 'その他',
+            'category_name' => 'その他 ',
         ]);
     }
 }
