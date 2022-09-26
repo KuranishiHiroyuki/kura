@@ -24,8 +24,16 @@ class UsersSeeder extends Seeder
                 'password' => 'password11',
                 'role' => '1',
                 'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-           
+                'updated_at' => date('Y-m-d H:i:s'),
         ]);
+        DB::table('users')->insert([
+            
+            'name'    => 'tarou',
+            'email' => 'tarou@email.com',
+            'password' => 'password11',
+            'role' => '1',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+    ]);
     }
 }
