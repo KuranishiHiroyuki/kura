@@ -18,14 +18,14 @@ class UsersSeeder extends Seeder
     {
         //
         DB::table('users')->insert([
-            [
+            
                 'name'    => 'test',
                 'email' => 'test@example.com',
                 'password' => 'password11',
                 'role' => '1',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
-            ]
+           
         ]);
     }
 }
