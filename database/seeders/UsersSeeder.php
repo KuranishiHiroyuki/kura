@@ -21,7 +21,7 @@ class UsersSeeder extends Seeder
             [
                 'name'    => 'test',
                 'email' => 'test@example.com',
-                'password' => Hash::make('password11'),
+                'password' => 'password11',
                 'role' => '1',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
