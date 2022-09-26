@@ -16,7 +16,7 @@ class CategoriesSeeder extends Seeder
     {
         DB::table('categories')->insert([
             'id' => 1,
-            'category_name' => 'お菓子',
+            'category_name' => 'お 菓 子',
         ]);
         DB::table('categories')->insert([
             'id' => 2,
