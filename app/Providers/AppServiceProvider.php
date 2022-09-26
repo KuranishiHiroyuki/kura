@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         //
         Schema::defaultStringLength(191);
         
-            $categoryId = Item::all();
+            //$categoryId = Item::all();
             Paginator::useBootstrap();
 view()->share('categoryId','$categoryId');
     }
