@@ -40,7 +40,7 @@ class HomeController extends Controller
      $user->password =Hash::make($request->password);
      $user->role = $request->role;
      $user->save();
-     return redirect()->route('home');
+     return redirect()->route('/');
    }
 
     //ユーザー情報編集画面

@@ -270,9 +270,9 @@ public function csv_up(Request $request){
 }
 
 /**
- * csvアップロード画面
+ * csvアップロード
  * */
-public function up(Request $request)
+public function updload(Request $request)
 {
 
    // CSV ファイル保存

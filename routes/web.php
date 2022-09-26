@@ -54,7 +54,7 @@ Route::prefix('items')->group(function () {
     //CSVダウンロード
     Route::get('/download', [App\Http\Controllers\ItemController::class, 'download'])->name('csv');
     //CSVアップロード画面
-    Route::get('/update', [App\Http\Controllers\ItemController::class, 'csv_up'])->name('update');
+    Route::get('/csv_update', [App\Http\Controllers\ItemController::class, 'csvUp'])->name('csv_update');
 
     //登録画面
     Route::get('/item_register', [App\Http\Controllers\ItemController::class, 'register'])->name('item_register');
@@ -65,6 +65,6 @@ Route::prefix('items')->group(function () {
     //削除
     Route::post('/destroy/{id}', [App\Http\Controllers\ItemController::class, 'destroy'])->name('destroy');
     //CSVアップロード
-    Route::post('/up', [App\Http\Controllers\ItemController::class, 'up'])->name('up');
+    Route::post('/upload', [App\Http\Controllers\ItemController::class, 'up'])->name('upload');
 });
 });

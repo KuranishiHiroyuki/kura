@@ -13,7 +13,7 @@ st/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDL
 
 @section('content')
     <p class="text-center">DBに追加したいCSVデータを選択してください。</p>
-    <form  action="{{ route('up') }}" method="post" enctype="multipart/form-data">
+    <form  action="{{ route('upload') }}" method="post" enctype="multipart/form-data">
       @csrf
          <div class="input-group mb-3">
   <input type="file" class="form-control" name="csv" id="csv">
