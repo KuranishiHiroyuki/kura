@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Item;
-use App\Models\Models\Category;
-
+use App\Models\Category;
+use App\Models\User;
 
 
 class DatabaseSeeder extends Seeder
