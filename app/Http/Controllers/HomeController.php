@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Http\Request;
+use App\Http\Requests\UsersRequest;
 use App\Models\User;
 
 
@@ -32,7 +33,7 @@ class HomeController extends Controller
     }
 
    //更新
-   public function up(Request $request){
+   public function up(UsersRequest $request){
      //既存のレコードを取得し、編集し保存
      $user = User::find($request->id);
      $user->name = $request->name;

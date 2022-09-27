@@ -89,7 +89,7 @@ class ItemController extends Controller
     /**
      * 商品登録
      */
-    public function add(itemRequest $request)
+    public function add(ItemRequest $request)
     {
 
         $item = new Item();
@@ -193,7 +193,7 @@ class ItemController extends Controller
     /**
      *更新機能
      */
-    public function update(itemRequest $request)
+    public function update(ItemRequest $request)
     {
         //既存のレコードを取得し、編集し保存
         $item = Item::find($request->id);
