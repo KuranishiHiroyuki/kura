@@ -243,7 +243,7 @@ return [
         ],
         [
             'text' => 'CSVインポート',
-            'url'  => 'items/update',
+            'url'  => 'items/csv_update',
             'icon' => 'fa-solid fa-file-import',
             'can' => 'Admin'
         ],

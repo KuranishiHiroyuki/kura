@@ -54,7 +54,7 @@ Route::prefix('items')->group(function () {
     //CSVダウンロード
     Route::get('/download', [App\Http\Controllers\ItemController::class, 'download'])->name('csv');
     //CSVアップロード画面
-    Route::get('/csv_update', [App\Http\Controllers\ItemController::class, 'csvUp'])->name('csv_update');
+    Route::get('/csv_update', [App\Http\Controllers\ItemController::class, 'csv_up'])->name('csv_update');
 
     //登録画面
     Route::get('/item_register', [App\Http\Controllers\ItemController::class, 'register'])->name('item_register');
