@@ -229,14 +229,13 @@ class ItemController extends Controller
         // 書き込みモードで開く
         $stream = fopen('php://temp', 'w');
         //カラム名の指定
-        $arr = array('id', 'name','category_id', 'price', 'detail', 'created-at');
+        $arr = array('name','category_id', 'price', 'detail', 'created-at');
         
         // 1行目にカラム名のみ書き込む
         fputcsv($stream, $arr);
         // ２行目以降の出力
         foreach ($items as $item) {
             $arrInfo = array(
-                'id' => $item->id,
                 'name' => $item->name,
                 'category_id' =>$item->category_id,
                 'price' => $item->price,
