@@ -65,6 +65,6 @@ Route::prefix('items')->group(function () {
     //削除
     Route::post('/destroy/{id}', [App\Http\Controllers\ItemController::class, 'destroy'])->name('destroy');
     //CSVアップロード
-    Route::post('/upload', [App\Http\Controllers\ItemController::class, 'up'])->name('upload');
+    Route::post('/upload', [App\Http\Controllers\ItemController::class, 'upload'])->name('upload');
 });
 });
