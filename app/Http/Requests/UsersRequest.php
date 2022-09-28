@@ -30,7 +30,7 @@ class UsersRequest extends FormRequest
                 'required'
             ],
             'email' =>[
-                'required','unique'
+                'required'
             ],
             'password' => [
                 'required'
