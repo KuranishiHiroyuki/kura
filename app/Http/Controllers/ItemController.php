@@ -28,11 +28,11 @@ class ItemController extends Controller
         $this->category = new Category();
     }
 
-    public function page()
-    {
-        $inquiries = Inquiry::paginate(5);
-        return view('items.search', compact('inquiries'));
-    }
+    // public function page()
+    // {
+    //     $inquiries = Inquiry::paginate(5);
+    //     return view('items.search', compact('inquiries'));
+    // }
 
     /**
      * 商品一覧&並び替え
@@ -71,6 +71,7 @@ class ItemController extends Controller
         $categoryId = $request->input('categoryId');
         $items2 = Item::all();
         $items2 = Item::paginate(10);
+        //dd($items2);
         return view(
             'item.index',
             compact(

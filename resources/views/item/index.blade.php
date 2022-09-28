@@ -100,7 +100,7 @@
           </tr>
         </thead>
        <tbody>
-          @foreach($items as $item)
+          @foreach($items2 as $item)
           <tr>
 
             <th class='table-text'>{{ $item->id }}</th>
