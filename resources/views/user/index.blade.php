@@ -21,7 +21,7 @@
                                 <input type="text" class="form-control" name="keyword" value="{{ $keyword }}">
                             </div>
                             <div class="col-sm-auto">
-                                <button type="submit" class="btn btn-primary ">検索</button>
+                                <button type="submit" class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"> </i>検索</button>
                             </div>
                         </div>
                         

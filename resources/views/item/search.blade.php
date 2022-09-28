@@ -12,7 +12,7 @@
   <div class="container">
     <div class="mx-auto">
       <br>
-      <h2 class="text-center">検索結果画面</h2>
+      <h2 class="text-center">検索結果画面/商品管理画面</h2>
       <br>
     <!--検索フォーム-->
     <div class="row">
